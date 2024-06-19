@@ -1,0 +1,9 @@
+<h2>Formulario</h2>
+<form class="row" (ngSubmit)="emitEstudiante()">
+    <input [(ngModel)]="estudianteFormulario.nombre" name="nombre" class="my-1" type="text" placeholder="Nombre">
+    <input [(ngModel)]="estudianteFormulario.carrera" name="carrera" class="my-1" type="text" placeholder="Carrera">
+    <input [(ngModel)]="estudianteFormulario.edad" name="edad" class="my-1" type="number" placeholder="Edad">
+    <input [(ngModel)]="estudianteFormulario.tel" name="tel" class="my-1" type="text" placeholder="Tel">
+
+    <button class="btn btn-primary">Mandar Informacion</button>
+</form>

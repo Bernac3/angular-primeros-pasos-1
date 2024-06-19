@@ -1,0 +1,16 @@
+<div class="container">
+    <div class=" d-flex">
+        <app-form class="col-6"
+            (EmiterEstudianteForm)="addEstudiante($event)"
+        ></app-form>
+    
+        <app-list class="col-6" 
+            [listaEstudiantes]="estudiante"
+            (EliminarEstudianteEmiter)="deleteEstudiante($event)"
+        ></app-list>
+    </div>
+
+    <div>
+        <app-list-show [showEstudiantes]="estudiante"></app-list-show>
+    </div>
+</div>

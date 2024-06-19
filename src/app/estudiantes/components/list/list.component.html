@@ -1,0 +1,9 @@
+<h2>Lista</h2>
+<ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let item of listaEstudiantes; let i = index">
+      
+        <p class="m-0">{{item.nombre}} {{item.carrera}} {{item.edad}} {{item.tel}}</p>
+      
+        <button (click)="eliminarEstudiante(item.id)" class="btn btn-danger">X</button>
+    </li>
+</ul>
